@@ -14,8 +14,7 @@
       "\\.(css)$": "identity-obj-proxy",
       "\\.svg": "<rootDir>/.jest/__mocks__/svgr-mock.ts",
       "^jest-helpers/(.*)": "<rootDir>/.jest/$1",
-      "^components/(.*)": "<rootDir>/src/components/$1",
-      "^core/(.*)": "<rootDir>/src/core/$1"
+      "^components/(.*)": "<rootDir>/src/components/$1"
     },
     "setupFiles": [
       "<rootDir>/.jest/env.ts",
@@ -46,15 +45,14 @@
     "build": "next build",
     "export": "next export -o dist",
     "start": "next start",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "ts:check": "tsc --noEmit",
     "postinstall": "husky install"
   },
   "dependencies": {
     "next": "13.2.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "what-input": "5.2.12"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "17.5.1",
@@ -70,7 +68,6 @@
     "@typescript-eslint/parser": "5.57.0",
     "cssnano": "6.0.0",
     "cssnano-preset-advanced": "6.0.0",
-    "cypress": "12.9.0",
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
     "eslint-plugin-cypress": "2.13.2",

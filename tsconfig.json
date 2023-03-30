@@ -26,8 +26,7 @@
     "jsx": "preserve",
     "baseUrl": "./",
     "paths": {
-      "@/components/*": ["src/components/*"],
-      "@/core/*": ["src/core/*"],
+      "@/*": ["src/*"],
     }
   },
   "exclude": [
