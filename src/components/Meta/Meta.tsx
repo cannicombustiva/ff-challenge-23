@@ -7,8 +7,8 @@ interface IProps {
 }
 
 export const Meta = ({
-  description = '[CHANGE ME] Something default description',
-  title = '[CHANGE ME] Something Default Title',
+  description = 'Interview challenge for Frontend Focus',
+  title = 'FF Challenge 23',
   children,
 }: IProps) => (
   <Head>
