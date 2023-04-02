@@ -1,28 +1,19 @@
-import Link from 'next/link';
-
-import { Meta } from '@/components/Meta';
-
-import useProducts from '../hooks';
+import Container from '@/components/Container';
+import ProductList from '@/components/ProductList';
+import { useProducts } from '@/hooks/useProducts';
 
 const Home = () => {
-  const { getProducts } = useProducts();
-  const { data, error, isLoading } = getProducts();
+  const { data, error, isLoading } = useProducts();
 
   return (
     <>
-      <Meta title="Some awesome title" />
-      {isLoading && <div>Loading...</div>}
-      {error && <div>Error...</div>}
-      {
-        data?.products.map(product => (
-          <div key={product.id}>
-            <Link href={`/products/${product.id}`}>
-              <h2>{product.title}</h2>
-              <p>{product.description}</p>
-            </Link>
-          </div>
-        ))
-      }
+      <Container>
+        {isLoading && <div>Loading...</div>}
+        {error && <div>Error...</div>}
+        <ProductList
+          products={data?.products ?? []}
+        />
+      </Container>
     </>
   );
 };

@@ -1,0 +1,33 @@
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.productDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 66px;
+    text-transform: uppercase;
+    line-height: 28.84px;
+   
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+}
+
+@media screen and (min-width: 870px) {
+    .carouselContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 8rem;
+    }
+}
