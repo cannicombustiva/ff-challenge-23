@@ -24,6 +24,24 @@
     width: 350px;
 }
 
+
+
+@media screen and (max-width: 870px) {
+    .wrapperInnerDescription{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+    }
+}
 @media screen and (min-width: 870px) {
     .carouselContainer {
         display: flex;
