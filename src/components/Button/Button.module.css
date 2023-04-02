@@ -1,0 +1,38 @@
+.buttonNormal {
+    width: 255px;
+    height: 60px;
+    left: 770px;
+    top: 822px;
+    background-color: #000000;
+    border-radius: 4px; 
+    border: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.buttonNormal:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+.buttonFilter {
+   background-color: transparent;
+   border-color: transparent;
+   text-transform: uppercase;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: 300;
+}
+
+.title{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.buttonNormal:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+   /*.button[data-kind=]*/
