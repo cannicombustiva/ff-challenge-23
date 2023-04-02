@@ -1,0 +1,28 @@
+.spacer {
+    height: 0px;
+    border: 1px solid #000000;
+}
+
+.filter {
+    padding: 16px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.filterSectionWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    gap: 16px;
+}
+
+.innerFilterSectionWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}

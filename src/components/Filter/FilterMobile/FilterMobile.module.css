@@ -1,0 +1,27 @@
+.container {      
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+    align-items: center;
+    text-transform: uppercase;
+    border-top: 1px solid #000000;
+}
+
+.filterSectionWrapper {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.innerFilterSectionWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.content{
+    padding: 10px 0;
+    gap: 10px;
+}
