@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router';
 
-import Breadcrumb from '@/components/Breadcrumb';
-import Button from '@/components/Button';
-import Carousel from '@/components/Carousel';
-import Container from '@/components/Container';
-import Rating from '@/components/Rating';
+import { Breadcrumb } from '@/components/Breadcrumb';
+import { Button } from '@/components/Button';
+import { Carousel } from '@/components/Carousel';
+import { Container } from '@/components/Container';
+import { Rating } from '@/components/Rating';
 import { useProduct } from '@/hooks/useProducts';
 
 import s from './ProductDetail.module.css';

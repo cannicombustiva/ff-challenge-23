@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 
-import Button from '@/components/Button';
+import { Button } from '@/components/Button';
 
 import ArrowDown from './arrow-down.svg';
 import ArrowUp from './arrow-up.svg';

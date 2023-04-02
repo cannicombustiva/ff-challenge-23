@@ -23,8 +23,7 @@
       "^.+\\.(tsx|ts|js|jsx)?$": "ts-jest"
     },
     "testPathIgnorePatterns": [
-      "node_modules",
-      "cypress"
+      "node_modules"
     ],
     "globals": {
       "ts-jest": {

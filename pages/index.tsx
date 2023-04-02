@@ -1,4 +1,4 @@
-import Container from '@/components/Container';
+import { Container } from '@/components/Container';
 import ProductList from '@/components/ProductList';
 import { useProducts } from '@/hooks/useProducts';
 

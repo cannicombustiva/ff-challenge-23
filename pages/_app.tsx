@@ -2,7 +2,7 @@ import './_app.css';
 
 import { Roboto } from 'next/font/google';
 
-import Layout from '@/components/Layout';
+import { Layout } from '@/components/Layout';
 import { ResponsiveProvider } from '@/hooks/useResponsiveContext';
 
 const roboto = Roboto({
