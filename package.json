@@ -5,33 +5,6 @@
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": "eslint"
   },
-  "jest": {
-    "roots": [
-      "<rootDir>"
-    ],
-    "moduleNameMapper": {
-      "\\.(css)$": "identity-obj-proxy",
-      "\\.svg": "<rootDir>/.jest/__mocks__/svgr-mock.ts",
-      "^jest-helpers/(.*)": "<rootDir>/.jest/$1",
-      "^components/(.*)": "<rootDir>/src/components/$1"
-    },
-    "setupFiles": [
-      "<rootDir>/.jest/env.ts",
-      "jest-canvas-mock"
-    ],
-    "transform": {
-      "^.+\\.(tsx|ts|js|jsx)?$": "ts-jest"
-    },
-    "testPathIgnorePatterns": [
-      "node_modules"
-    ],
-    "globals": {
-      "ts-jest": {
-        "tsconfig": "tsconfig.test.json"
-      }
-    },
-    "testEnvironment": "jsdom"
-  },
   "browserslist": [
     "last 1 Chrome versions",
     "last 1 Firefox versions",
@@ -43,7 +16,6 @@
     "build": "next build",
     "export": "next export -o dist",
     "start": "next start",
-    "test": "jest --passWithNoTests",
     "ts:check": "tsc --noEmit",
     "postinstall": "husky install"
   },
@@ -100,7 +72,6 @@
     "stylelint": "15.3.0",
     "stylelint-config-equinusocio": "1.6.8",
     "stylelint-config-standard": "31.0.0",
-    "ts-jest": "29.0.5",
     "typescript": "5.0.2"
   }
 }
