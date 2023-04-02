@@ -1,0 +1,24 @@
+.spinner {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid;
+    border-color: #000 #0000;
+    animation: s1 1s infinite;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 130px;
+    place-items:center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+  }
+  @keyframes s1 {to{transform: rotate(.5turn)}}
+  
+  
+  
+
+  

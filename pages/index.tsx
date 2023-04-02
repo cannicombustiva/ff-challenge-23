@@ -1,4 +1,5 @@
 import { Container } from '@/components/Container';
+import { Loader } from '@/components/Loader';
 import ProductList from '@/components/ProductList';
 import { useProducts } from '@/hooks/useProducts';
 
@@ -8,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Container>
-        {isLoading && <div>Loading...</div>}
+        {isLoading && <Loader />}
         {error && <div>Error...</div>}
         <ProductList
           products={data?.products ?? []}
